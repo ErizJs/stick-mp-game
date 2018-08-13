@@ -16,11 +16,40 @@ import javax.swing.Timer;
 public class Level {
     public static void main(String[] args)
     {
-        JFrame frame = new JFrame("2D Game - Java Course Final Project");
+        JFrame frame = new JFrame("Stick Game");
         frame.setSize(1280, 1024);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
-        frame.add(new WaveModeFrame());
+        JButton single = new JButton("Singleplayer");
+        JButton host = new JButton("Host Game");
+        JButton join = new JButton("Join Game");
+        JPanel mainmenu = new JPanel();
+        frame.add(mainmenu);
         frame.setVisible(true);
+        mainmenu.add(single);
+        mainmenu.add(host);
+        mainmenu.add(join);
+        class ClickListener implements ActionListener { 
+          public void actionPerformed(ActionEvent event) {  
+                  Object obj = event.getSource(); 
+                  if (obj == single) {
+                      frame.getContentPane().removeAll();
+                      frame.setVisible(false); // this must be done or no input will be taken
+                      frame.getContentPane().add(new WaveModeFrame());
+                      frame.setVisible(true);
+                      frame.getContentPane().revalidate();
+                    }
+                    else if (obj == host) {
+                        
+                    }
+                } 
+            }
+        
+        ActionListener listener3 = new ClickListener();
+        single.addActionListener(listener3);
+      
+        ActionListener listener4 = new ClickListener();
+        host.addActionListener(listener4);
+        
     }
 }

@@ -14,46 +14,29 @@ import javax.swing.JButton;
 
 public class WaveModeFrame extends JPanel implements ActionListener{
     
-    
     private Timer mainTimer;
-    
     private Timer attackTimer;
-    
     private Timer spawnerTimer;
-    
     private static Player player;
-    
     private int enemyCount = 5;
-    
     private int enemySpawnCount = 10;
-    
     private static int enemiesKilled = 0;
-    
     private static ArrayList<Enemy> enemyList = new ArrayList<Enemy>();
-    
     private static int score = 0;
-    
     private Random rand = new Random();
-    
     boolean bossSpawned = false;
-    
     static ArrayList<Bullet> bulletList = new ArrayList<Bullet>();
-    
     private int SpawnIterator = 0;
-    
     private static int wave = 1;
     
     public WaveModeFrame() 
     {
       setFocusable(true);
-
+      setEnabled(true);
                       
       player = new Player(640-96, 512-128);
         
-        
-        
       addKeyListener(new keyListener(player));
-        
         
       mainTimer = new Timer(10, this);
       mainTimer.start();

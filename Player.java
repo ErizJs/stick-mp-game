@@ -159,6 +159,6 @@ public class Player extends Entity {
     }
     
     public static void addBulletCount(){
-        bulletsPerShot += 10;
+        bulletsPerShot += 0;
     }
 }
