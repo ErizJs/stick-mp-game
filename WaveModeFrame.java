@@ -110,6 +110,7 @@ public class WaveModeFrame extends JPanel implements ActionListener{
                 Font font = new Font("Serif", Font.BOLD, 36);
                 g.setFont(font);
                 g.drawString("You have died. Score: " + score, 640, 512);
+                
             }
         
     }
@@ -170,10 +171,9 @@ public class WaveModeFrame extends JPanel implements ActionListener{
                 Enemy boss = new AwokenBlueJ(0, 0);
                 boss.setHealth(50*wave);
                 addEnemy(boss);
-                
-                
+
                 SpawnIterator = 0;
-                wave+= 1;
+                wave += 1;
            }
        }
     }
