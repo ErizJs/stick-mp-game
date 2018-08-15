@@ -36,25 +36,14 @@ public class Bullet extends Entity
             Enemy tempEnemy = enemies.get(i);
             if (getBounds().intersects(tempEnemy.getBounds()))
             {
-                if(tempEnemy instanceof Skeleton)
-                {
-                    killBasicEnemy(tempEnemy);
-                }
-                
-                if(tempEnemy instanceof Zombie)
-                {
-                    killBasicEnemy(tempEnemy);
-                }
-                
-                if(tempEnemy instanceof Spider)
-                {
-                    killBasicEnemy(tempEnemy);
-                }
-                
                 if(tempEnemy instanceof AwokenBlueJ)
                 {
                     WaveModeFrame.removeBullet(this);
                     tempEnemy.removeHealth(5);
+                }
+                
+                else{
+                 killBasicEnemy(tempEnemy);   
                 }
             }
         }
