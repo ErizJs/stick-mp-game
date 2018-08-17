@@ -11,6 +11,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 import javax.swing.JButton;
+import javax.swing.JOptionPane;
 
 public class WaveModeFrame extends JPanel implements ActionListener{
     
@@ -34,7 +35,7 @@ public class WaveModeFrame extends JPanel implements ActionListener{
       setFocusable(true);
       setEnabled(true);
                       
-      player = new Player(640-96, 512-128);
+      player = new Player(JOptionPane.showInputDialog(this, "Create a Username"),640-96, 512-128);
         
       addKeyListener(new keyListener(player));
         

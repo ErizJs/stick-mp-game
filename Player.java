@@ -20,13 +20,14 @@ public class Player extends Entity {
     
     private static int bulletsPerShot = 1;
     
-    public Player(int x, int y) {
+    public Player(String username,int x, int y) {
          super(x, y);
          health = maxHP;
-         iconState = new ImageIcon("stickfig.png");
-         icRight = new ImageIcon("stickfig.png");
-         icLeft = new ImageIcon("stickfig2.png");
-         icHurt = new ImageIcon("stickfigHurt.png");
+         iconState = new ImageIcon("Assets/stickfig.png");
+         icRight = new ImageIcon("Assets/stickfig.png");
+         icLeft = new ImageIcon("Assets/stickfig2.png");
+         icHurt = new ImageIcon("Assets/stickfigHurt.png");
+         this.username = username;
          update();
     }
     

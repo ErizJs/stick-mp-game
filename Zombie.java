@@ -13,7 +13,7 @@ public class Zombie extends Enemy
 {   
     public Zombie(int x, int y) {
         super(x, y);
-        iconState = new ImageIcon("stickfigHurt.png");
+        iconState = new ImageIcon("Assets/stickfigHurt.png");
         velocityX = 0;
         velocityY = 0;
         damage = 3;

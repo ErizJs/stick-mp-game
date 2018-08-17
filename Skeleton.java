@@ -6,7 +6,7 @@ import javax.swing.ImageIcon;
 public class Skeleton extends Enemy{
     public Skeleton(int x, int y) {
         super(x, y);
-        iconState = new ImageIcon("skeleton.png");
+        iconState = new ImageIcon("Assets/skeleton.png");
         velocityX = 0;
         velocityY = 0;
         damage = 2;

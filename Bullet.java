@@ -18,7 +18,7 @@ public class Bullet extends Entity
     public Bullet(int x, int y)
     {
         super(x, y);
-        iconState = new ImageIcon("bullet.png");
+        iconState = new ImageIcon("Assets/bullet.png");
     }
     
     public void update()

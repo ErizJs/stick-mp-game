@@ -18,9 +18,9 @@ public class AwokenBlueJ extends Enemy
     
     public AwokenBlueJ(int x, int y) {
         super(x, y);
-        iconState = new ImageIcon("awokenBlueJRight.png");
-        iconStateRight = new ImageIcon("awokenBlueJRight.png");
-        iconStateLeft = new ImageIcon("awokenBlueJLeft.png");
+        iconState = new ImageIcon("Assets/awokenBlueJRight.png");
+        iconStateRight = new ImageIcon("Assets/awokenBlueJRight.png");
+        iconStateLeft = new ImageIcon("Assets/awokenBlueJLeft.png");
         velocityX = 0;
         velocityY = 0;
         damage = 50;

@@ -13,7 +13,7 @@ public class Spider extends Enemy
 {
     public Spider(int x, int y) {
         super(x, y);
-        iconState = new ImageIcon("spider.png");
+        iconState = new ImageIcon("Assets/spider.png");
         velocityX = 0;
         velocityY = 0;
         damage = 1;

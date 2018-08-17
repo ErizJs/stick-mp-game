@@ -35,6 +35,9 @@ public class Level {
                     else if (obj == host) {
                         
                     }
+                    else if (obj == join) {
+                        
+                    }
                 } 
             }
         

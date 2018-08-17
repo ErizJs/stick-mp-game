@@ -12,6 +12,7 @@ public abstract class Entity
     protected ImageIcon iconState;
     protected int velocityX;
     protected int velocityY;
+    protected String username = "";
     
     
     public Entity(int x, int y)
@@ -27,9 +28,8 @@ public abstract class Entity
     public abstract void update();
     
     public void draw(Graphics2D g2) {
-        
         g2.drawImage(getImg(), x, y, null);
-        
+        g2.drawString(username, x, y-10);
     }
     
     public Image getImg() 
